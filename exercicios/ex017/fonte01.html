@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body { 
+            /*CSS Web Safe Fonts, para saber a familia certa da fonte*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            recomendado usar é o em
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            /* ligther normal bold bolder */
+            /* weight = peso
+               width = largura 
+               height = altura 
+              */
+
+        }
+
+        h1 {
+            /* shorthand font
+            font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: bolder 2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, delectus dolorem quaerat, mollitia alias ut recusandae vitae repellat maxime laudantium rerum! Labore officiis distinctio tempora repudiandae quaerat reprehenderit modi doloribus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum corrupti aliquam nisi accusamus minus totam magni exercitationem reprehenderit! Iusto atque officia facere sed cupiditate molestiae unde consectetur tenetur nihil explicabo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem accusamus, nemo soluta odio tenetur quasi minus nulla optio vero ex commodi sunt mollitia in explicabo tempora, sapiente expedita? Modi.</p>
+    <h2>Subtítulo do execício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates deserunt ipsa similique vel esse dicta omnis sit accusamus, molestias hic sed sunt enim ex asperiores praesentium, voluptatem nostrum, quibusdam provident.</p>
+</body>
+</html>

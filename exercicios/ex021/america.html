@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 216, 175);
+            margin: 0px;
+        }
+
+        header {
+            width: 600px;
+            background-color: snow;
+            padding: 10px;
+            margin: 10px auto 10px auto;
+        }
+
+        main {
+            width: 600px;
+            background-color: snow;
+            padding: 10px;
+            margin: 10px auto 10px auto;
+        }
+
+        footer {
+            background-color: black;
+            color: snow;
+            text-align: center;
+            padding: 5px 0px ;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: darkgray;
+        }
+
+        nav{
+            background-color: rgb(150, 148, 148);
+        }
+
+        nav > a {
+            text-decoration: none;
+            padding: 3px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        #america {
+            background-color: rgb(250, 205, 205);
+        }
+
+        #america > aside {
+            background-color: darkgray;
+            padding: 0px 2px 0px 2px;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Sejam bem vindos a América Estofados</h1>
+       <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+       </nav>
+    </header>
+    <main>
+        <section>
+            <article id="america">
+                <h2>América Estofados</h2>
+                <p>Somos uma empresa de sofás de luxo até a sofás populares!</p>
+                <aside>
+                   <p>Dono da empresa é o Antonio Carlos</p>
+                </aside>
+            </article>
+        </section>
+        <section id="Espumas">
+            <article>
+                <h2>Nossas espumas</h2>
+                <p>Trabalhamos com 2 tipos a d30 e a d45</p>
+                <aside>
+                    Nossas espumas tem o selo do INMETRO
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+       <p>Desenvolvido por Vitor Guarizo</p>
+    </footer>
+</body>
+</html>

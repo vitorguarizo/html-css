@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1 { /*Elemento box-level*/
+            background-color: lightgray;
+
+            /* Box Size: */
+            height: 300px;
+            width: 300px;
+
+            /* Propiedades anatômicas: */
+            border: 10px solid darkslategray;
+
+            padding: 10px 20px 10px 20px;
+
+            margin: auto;
+
+            outline: 5px dashed salmon;
+        }
+
+        /* Se eu quiser mudar as caracteristicas do "box-level" e do "inline-level", basta eu colocar a propiedade "diplay: inline" "display: block" e "display: inline-block para modifical width e height" */
+
+        a { /* Elemento inline-level */
+           border: 4px solid red;
+
+           padding: 1px 1px 1px 1px;
+
+           margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos também são exemplos de box-level,mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
