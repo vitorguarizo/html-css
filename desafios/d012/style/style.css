@@ -10,6 +10,11 @@
     font-size: 1em;
 }
 
+html, body {
+    background-color: white;
+    min-height: 100vh;
+}
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Passion One", sans-serif;
@@ -21,50 +26,56 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 50px 0px;
-    
 }
 
 header > h1 {
     font-family: var(--fonte2);
     font-size: 10vw;
     font-variant: small-caps;
+    padding-top: 50px;
 }
 
 header > p {
     font-family: var(--fonte1);
     font-size: 16px;
+    padding-bottom: 50px;
 }
 
-header  a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-section.normal {
-    font-size: 3.5vw;
-    font-family: var(--fonte3);
-    padding: 92.5px 0px 0px 30px;
-    line-height: 7vw;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    background-color: white;
 }
 
-section#primeiro {
+section.normal {
+    background-color: white;
+    color: black;
     font-size: 3.5vw;
     font-family: var(--fonte3);
-    padding: 92.5px 0px 160px 30px;
-    line-height: 7vw;
 }
 
 section.imagem {
+    background-color: rgb(51, 51, 51);
     font-size: 3.5vw;
     font-family: var(--fonte3);
-    padding: 92.5px 0px 0px 30px;
 }
+
+/*section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.39);
+}*/
 
 section#img01 {
     background-image: url(../imagens/background001.jpg);
@@ -77,11 +88,6 @@ section#img01 {
     box-shadow: inset 6px 5px 14px rgba(0, 0, 0, 0.486);
 }
 
-section p#normal {
-    padding-left: 4px;
-    line-height: 7vw;
-
-}
 
 section#img02 {
     background-image: url(../imagens/background002.jpg);
@@ -102,14 +108,4 @@ footer {
     font-size: 16px;
     padding: 10px;
     margin-top: 136px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
